@@ -16,7 +16,6 @@ public abstract class Vehicle {
         this.speed = 0;  // default speed is 0
     }
 
-    // Common methods for all vehicles
     public void start() {
         System.out.println("Vehicle starting...");
     }

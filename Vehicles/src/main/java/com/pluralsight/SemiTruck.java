@@ -14,7 +14,6 @@ public class SemiTruck extends Vehicle{
         this.trailerAttached = false;
     }
 
-    // SemiTruck-specific method
     public void attachTrailer() {
         trailerAttached = true;
         System.out.println("Trailer attached.");
@@ -25,4 +24,19 @@ public class SemiTruck extends Vehicle{
         System.out.println("SemiTruck horn: honnnnnk!");
     }
 
+    public double getCargoWeight() {
+        return cargoWeight;
+    }
+
+    public void setCargoWeight(double cargoWeight) {
+        this.cargoWeight = cargoWeight;
+    }
+
+    public boolean isTrailerAttached() {
+        return trailerAttached;
+    }
+
+    public void setTrailerAttached(boolean trailerAttached) {
+        this.trailerAttached = trailerAttached;
+    }
 }
