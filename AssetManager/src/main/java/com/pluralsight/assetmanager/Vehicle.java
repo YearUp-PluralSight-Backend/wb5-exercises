@@ -57,6 +57,13 @@ public class Vehicle extends Asset{
 
         if (age >= 1 && age <= 3) {
             value *= Math.pow(0.97, age);
+            /*
+            //          value = value * Math.pw(base, exponent)
+            Params:  a – the base.
+                    b – the exponent.
+            Returns:
+                            the value a^b.
+             */
         } else if (age >= 3 &&  age <= 6) {
             value *= Math.pow(0.94, age - 3) * Math.pow(0.97, 3);
         } else if (age >= 7 && age <= 10) {
