@@ -44,16 +44,16 @@ public class Home extends Asset{
 
         try {
             switch (this.condition) {
-                case 1 -> value = (180 * this.squareFoot);
-                case 2 -> value = (130 * this.squareFoot);
-                case 3 -> value = (90 * this.squareFoot);
-                case 4 -> value = (80 * this.squareFoot);
+                case 1 ->  value = super.getOriginalCost() - (180 * this.squareFoot);
+                case 2 -> value = super.getOriginalCost() - (130 * this.squareFoot);
+                case 3 -> value = super.getOriginalCost() - (90 * this.squareFoot);
+                case 4 -> value = super.getOriginalCost() - (80 * this.squareFoot);
                 default -> System.out.println("Out of conditions");
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            value += (this.lotSize * 0.25);
+            value -= (this.lotSize * 0.25);
         }
         return value;
 

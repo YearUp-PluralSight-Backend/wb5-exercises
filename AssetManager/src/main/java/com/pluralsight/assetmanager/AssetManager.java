@@ -6,11 +6,11 @@ import java.util.List;
 public class AssetManager {
 
     public static void main(String[] args) {
-        Vehicle vehicle1 = new Vehicle("Toyota Sedan", "2021-01-15", 22000.00, "Toyota Camry", 5, 35000);
-        Vehicle vehicle2 = new Vehicle("Compact Car", "2022-05-10", 25000.00, "Honda Civic", 9, 15000);
+        Asset vehicle1 = new Vehicle("Toyota Sedan", "2014-01-15", 1000, "Toyota Camry", 2010, 35000);
+        Asset vehicle2 = new Vehicle("Compact Car", "2020-05-10", 10000, "Honda Civic", 2020, 15000);
 
-        Home home1 = new Home("Family Home", "2020-03-21", 300000.00, "123 Maple Street", 2, 1500, 5000);
-        Home home2 = new Home("Vacation Cabin", "2018-08-12", 250000.00, "456 Oak Avenue", 3, 2000, 4000);
+        Asset home1 = new Home("Family Home", "2020-03-21", 300000.00, "123 Maple Street", 2, 1500, 5000);
+        Asset home2 = new Home("Vacation Cabin", "2018-08-12", 250000.00, "456 Oak Avenue", 3, 2000, 4000);
 
         List<Asset> assets = new ArrayList<>();
         assets.add(vehicle1);

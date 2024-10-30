@@ -9,15 +9,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Asset {
+public abstract class Asset {
 
     private String description;
     private String dataAcquired;
     private double originalCost;
 
 
-    public double getValue() {
-        return originalCost;
-    }
+    public abstract double getValue();
 
 }

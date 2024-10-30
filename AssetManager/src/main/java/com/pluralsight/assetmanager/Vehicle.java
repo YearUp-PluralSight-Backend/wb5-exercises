@@ -1,5 +1,7 @@
 package com.pluralsight.assetmanager;
 
+import java.time.LocalDate;
+
 public class Vehicle extends Asset{
 
     private String makeModel;
@@ -50,7 +52,8 @@ public class Vehicle extends Asset{
     public double getValue() {
 
         double value = super.getOriginalCost();
-        int age = this.year;
+        int currentYear = LocalDate.now().getYear();
+        int age = currentYear - this.year;
 
         if (age >= 1 && age <= 3) {
             value *= Math.pow(0.97, age);
